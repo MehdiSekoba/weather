@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="checkYourNetwork">اینترنت خود را بررسی کنید</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchYourCity">شهر موردنظر خود را جستجو کنید</string>
+    <string name="search">جستجو کنید…</string>
+    <string name="select">انتخاب</string>
+    <string name="searchCanNotBeEmpty">جستجو شهر نمیتواند خالی باشد</string>
+    <string name="selectOneCity">شهر مورد نظر خود را انتخاب کنید</string>
+    <string name="selectYourCity">شهر مورد نظر خود را انتخاب کنید</string>
+    <string name="notFoundAnyCity">هیچ شهری به برنامه اضافه نشده است</string>
+    <string name="degreeCelsius">&#xb0;C</string>
+    <string name="degree">&#xb0;</string>
+    <string name="showAllData">نمایش همه اطلاعات</string>
+    <string name="feelingTemp">مطبوع ترین درجه هوا</string>
+    <string name="pressure">رطوبت هوا</string>
+    <string name="windSpeed">سرعت وزش باد</string>
+    <string name="messageAQI1">بیرون رفتن هیچ خطری نداره، میتونی ازش لذت ببری</string>
+    <string name="messageAQI2">کودکان و بزرگسالان شاغل و افراد مبتلا به بیماری های تنفسی، مانند آسم، باید فعالیت طولانی مدت در فضای باز را محدود کنند</string>
+    <string name="messageAQI3_4">کودکان و بزرگسالان شاغل و افراد مبتلا به بیماری های تنفسی مانند آسم باید از کار طولانی مدت در فضای باز جلوگیری کنند؛ هر کس دیگر، به ویژه کودکان، باید فعالیت طولانی مدت در فضای باز را محدود کند</string>
+    <string name="messageAQI5">همه باید از هرگونه فعالیت در فضای باز خودداری کنند</string>
+    <string name="co">کربن منوکسید</string>
+    <string name="pm2_5">ذرات معلق PM2.5</string>
+    <string name="pm10">ذرات معلق PM10</string>
+    <string name="o3">ازون</string>
+    <string name="no2">دی اکسید نیتروژن</string>
+    <string name="so2">دی اکسید گوگرد</string>
+    <string name="km_s">km/s</string>
+    <string name="txt_continue">ادامه دادن</string>
+    <string name="title_privacy">قوانین</string>
+    <string name="txt_accept">باشه</string>
+    <string name="txt_Rules">اجازه دهید آب و هوا دقیق‌ترین پیش‌بینی را به شما ارائه دهد و به ما اجازه می‌دهد از استفاده شما از برنامه ما استفاده کنیم، مستلزم این است که شرایط استفاده ما را مرور کنید و خط‌مشی رازداری ما را مرور کنید.</string>
+    <string name="version">نسخه</string>
+    <string name="no_internet">اینترنت وجود ندارد</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="no_internet_desc">شما به اینترنت متصل نیستید </string>
+    <string name="title_hours">پیش بینی ساعتی</string>
+    <string name="title_week">پیش بینی هفتگی</string>
+
+    پیش بینی هفتگی
+    <string name="txt_Privacy">سیاست حفظ حریم خصوصی
+
+بررسی اجمالی
+حریم خصوصی و امنیت داده های شما برای ما مهم است. این خط‌مشی رازداری انواع اطلاعات و داده‌های شخصی که ممکن است جمع‌آوری و ذخیره کنیم و نحوه استفاده از داده‌های شخصی را توضیح می‌دهد.
+در برخی موارد، برای ارائه خدماتی که درخواست کرده‌اید، به اطلاعاتی نیاز داریم و این بیانیه حفظ حریم خصوصی، پیش‌بینی آب و هوای زنده و ویجت آب و هوا را اعمال می‌کند.
+این خط‌مشی رازداری اطلاعاتی را که ممکن است هنگام دانلود برنامه‌های ما از فروشگاه Google Play جمع‌آوری و استفاده کنیم، توضیح می‌دهد.
+با استفاده از برنامه ها و خدمات ما، با شرایط حفظ حریم خصوصی که در این خط مشی توضیح داده شده است موافقت می کنید.
+* اطلاعات غیر شخصی
+ما ممکن است اطلاعات غیر شخصی را در موارد زیر جمع آوری و استفاده کنیم.
+برای درک بهتر رفتار کاربر، حل مشکلات موجود در محصولات و خدمات،
+  محصولات، خدمات و تبلیغات خود را بهبود دهیم، ممکن است اطلاعات غیر شخصی مانند نام برنامه نصب شده و نام بسته، داده های نصب، تعداد دفعات استفاده، کشور، تجهیزات و کانال را جمع آوری کنیم.
+اگر اطلاعات غیر شخصی با اطلاعات شخصی ترکیب شود،
+ما اطلاعات ترکیبی را به عنوان اطلاعات شخصی برای اهداف این سیاست حفظ حریم خصوصی در نظر می گیریم.
+*اطلاعاتی که ما از استفاده شما از خدمات ما دریافت می کنیم
+ما ممکن است اطلاعاتی در مورد سرویس هایی که استفاده می کنید و نحوه استفاده شما از آنها، مانند زمانی که محتوای ما را مشاهده می کنید و با آن تعامل دارید، جمع آوری کنیم.
+ممکن است اطلاعات مربوط به دستگاه (مانند مدل سخت افزار، نسخه سیستم عامل، شناسه های منحصر به فرد دستگاه و اطلاعات شبکه تلفن همراه) را جمع آوری کنیم.
+  ما آن اطلاعات را با اشخاص ثالث به اشتراک نخواهیم گذاشت.
+*اطلاعات موقعیت مکانی
+هنگامی که از یک سرویس برنامه آب و هوای دارای موقعیت مکانی استفاده می کنید، ممکن است اطلاعات مربوط به موقعیت مکانی واقعی شما را جمع آوری و پردازش کنیم، مانند سیگنال های GPS ارسال شده توسط دستگاه تلفن همراه.
+همچنین ممکن است از فناوری‌های مختلفی برای تعیین مکان استفاده کنیم، مانند داده‌های حسگر از دستگاه شما که برای مثال ممکن است اطلاعاتی در مورد نقاط دسترسی Wi-Fi و برج‌های سلولی اطراف ارائه دهد.</string>
+    <string name="please_turn">لطفاً روشن کنید</string>
+    <string name="wifi">وای فای</string>
+    <string name="mobile_data">داده تلفن همراه</string>
+    <string name="accepting_rules">پذیرش قوانین</string>
+    <string name="reception">لطفاً کادر تأیید را برای پذیرش فعال کنید</string>
+    <string name="error_404">ورودی خود را دوبار بررسی کنید: مطمئن شوید که نام شهر، کد پستی یا شناسه شهر را درست وارد کرده‌اید</string>
+    <string name="error_429">این درخواست غیرقابل قبول بود</string>
+    <string name="morning">صبح</string>
+    <string name="evening">عصر</string>
+    <string name="night">شب</string>
+    <string name="notFound">شهر یافت نشد</string>
+    <string name="language">زبان</string>
+    <string name="about">درباره ما</string>
+    <string name="settings">تنظیمات</string>
+    <string name="language_selection">انتخاب زبان</string>
+    <string name="unit_preferences">تنظیمات برگزیده واحد</string>
+    <string name="rating">امتیاز به برنامه</string>
+    <string name="title_rate">به برنامه امتیاز دهید</string>
+    <string name="des_rate">اگر از استفاده از برنامه ما لذت می برید، آیا مایلید به ما در اپ استور امتیاز دهید.</string>
+    <string name="may_be_later">شاید بعدا</string>
+    <string name="rate_now">باشه</string>
+    <string name="name_developer">مهدی سِکوبا</string>
+    <string name="title_about_p">درباره ی پروژه</string>
+    <string name="description_about_p">این یک پروژه منبع باز است که از سایت openweathermap گرفته شده است.</string>
+    <string-array name="languages_array">
+        <item>انگلیسی</item>
+        <item>فارسی</item>
+    </string-array>
+    <string-array name="unit_array">
+        <item>Celsius</item>
+        <item>kilometers</item>
+        <item>e.g</item>
+        <item>per hour</item>
+
+    </string-array>
+
+</resources>

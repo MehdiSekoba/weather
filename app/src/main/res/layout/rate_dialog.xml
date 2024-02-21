@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--card view-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_12mdp"
+        app:cardElevation="@dimen/_6mdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--constraintlayout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--top color view-->
+            <View
+                android:id="@+id/bg_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120mdp"
+                android:background="@color/yellow"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--imageview-->
+            <ImageView
+                android:id="@+id/emoji_head"
+                android:layout_width="@dimen/_100mdp"
+                android:layout_height="@dimen/_100mdp"
+                android:background="@drawable/round_back_while_stroke"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_20mdp"
+                app:layout_constraintBottom_toBottomOf="@id/bg_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg_view" />
+            <!--background circle-->
+            <View
+                android:id="@+id/bg_circle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/round_back_white"
+                android:elevation="@dimen/_12mdp"
+                app:layout_constraintBottom_toBottomOf="@id/emoji_head"
+                app:layout_constraintEnd_toEndOf="@id/emoji_head"
+                app:layout_constraintStart_toStartOf="@id/emoji_head"
+                app:layout_constraintTop_toTopOf="@id/emoji_head" />
+            <!--emoji-->
+            <ImageView
+                android:id="@+id/rating_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:elevation="@dimen/_12mdp"
+                android:padding="@dimen/_25mdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/three_star"
+                app:layout_constraintBottom_toBottomOf="@id/emoji_head"
+                app:layout_constraintEnd_toEndOf="@id/emoji_head"
+                app:layout_constraintStart_toStartOf="@id/emoji_head"
+                app:layout_constraintTop_toTopOf="@id/emoji_head" />
+            <!--rate_title-->
+            <TextView
+                android:id="@+id/rate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8mdp"
+                android:text="@string/title_rate"
+                android:textAppearance="@style/TextAppearance_Bold"
+                android:textColor="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rating_img" />
+            <!--description-->
+            <TextView
+                android:id="@+id/rate_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_12mdp"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:gravity="center_horizontal"
+                android:text="@string/des_rate"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/rate_title" />
+            <!--ratingbar-->
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/app_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8mdp"
+                android:theme="@style/myRateBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rate_des"
+                android:layoutDirection="ltr"/>
+            <!--may be later-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/may_be_later"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/may_be_later"
+                app:backgroundTint="@color/gray_500"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_now"
+                app:backgroundTint="@color/green"
+                android:id="@+id/rate_now"
+                android:textColor="@color/white" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/PageFlow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:paddingVertical="@dimen/_6mdp"
+                app:constraint_referenced_ids="rate_now,may_be_later"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/app_rating" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

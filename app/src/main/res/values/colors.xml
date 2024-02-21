@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--my color-->
+    <color name="Spanish_Violet">#3B267B</color>
+    <color name="Deep_Koamaru">#2e335a</color>
+    <color name="Dark_Gunmetal">#1C1B33</color>
+    <color name="Charcoal">#3A3F54</color>
+    <color name="Vodka">#BBB5E3</color>
+    <color name="Grape">#612FAB</color>
+    <color name="Blue_Magenta_Violet">#48319D</color>
+    <color name="Silver_Sand">#C4C4C4</color>
+    <color name="Blue_Magenta">#5B3997</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="Celeste">#BEFFFFFF</color>
+    <color name="Cerise_Pink">#F43E7C</color>
+    <color name="white_glass">#36FFFFFF</color>
+    <color name="gray_900">#212121</color>
+    <color name="colorOverLay">#19FFFFFF</color>
+    <color name="tab">#39FFFFFF</color>
+    <color name="card_bg">#AD48319D</color>
+    <color name="Sea_Serpent">#40CBD8</color>
+    <color name="flashWhite">#F3F3F3</color>
+    <color name="royalBlue">#467af8</color>
+    <color name="cultured">#f4f6f6</color>
+    <color name="backShadow">#99000000</color>
+    <color name="cornflowerBlue">#39A7FF</color>
+    <color name="green">#03C988</color>
+    <color name="yellow">#ECB72D</color>
+    <color name="orange">#FF7B54</color>
+    <color name="red">#CD0404</color>
+    <color name="purple">#58287F</color>
+
+</resources>

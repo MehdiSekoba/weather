@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top_rounded_white"
+    tools:context=".ui.setting.about.AboutFragment">
+
+    <!--Scroll-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!--Container-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--divider-->
+            <View
+                android:layout_width="@dimen/_18mdp"
+                android:layout_height="@dimen/_4mdp"
+                android:background="@color/gray_500"
+                android:layout_marginTop="@dimen/_22mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/divider_view"/>
+            <!--avatar-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/developer_avatar"
+                android:layout_width="@dimen/_100mdp"
+                android:layout_height="@dimen/_100mdp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider_view"
+                android:layout_marginTop="@dimen/_10mdp"
+                app:shapeAppearance="@style/CircleImage"
+                tools:src="@tools:sample/backgrounds/scenic" />
+            <!--developer  name-->
+            <TextView
+                android:id="@+id/name_developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:textAppearance="@style/TextAppearance_Bold"
+                android:textColor="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_avatar"
+                tools:text="Mehdi Sekoba" />
+            <!--guideline-->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guid_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2mdp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guid_right"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2mdp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+            <!--about project-->
+            <TextView
+                android:id="@+id/title_about"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12mdp"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/gray_500"
+                app:layout_constraintEnd_toEndOf="@id/guid_right"
+                app:layout_constraintStart_toStartOf="@id/guid_left"
+                app:layout_constraintTop_toBottomOf="@id/name_developer"
+                tools:text="about project" />
+            <!--description about-->
+            <TextView
+                android:id="@+id/desc_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="2dp"
+                android:paddingVertical="@dimen/_6mdp"
+                android:textAppearance="@style/TextAppearance_Bold"
+                android:textColor="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="@id/guid_right"
+                app:layout_constraintStart_toStartOf="@id/guid_left"
+                app:layout_constraintTop_toBottomOf="@id/title_about"
+                tools:text="@string/txt_Privacy" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

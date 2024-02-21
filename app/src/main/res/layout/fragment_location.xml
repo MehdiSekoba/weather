@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.location.LocationFragment">
+
+    <!--Container-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <!--Bg-->
+        <ImageView
+            android:id="@+id/bgImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/backgrounds/scenic" />
+        <!--Guideline Right Left-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2mdp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2mdp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+        <!--icon weather city-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/weather_city"
+            android:layout_width="@dimen/_72mdp"
+            android:layout_height="@dimen/_72mdp"
+            android:layout_marginTop="@dimen/_54mdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            tools:src="@drawable/sun_cloud" />
+        <!--City name-->
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_Bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/weather_city"
+            tools:text="Shiraz" />
+        <!--Info-->
+        <TextView
+            android:id="@+id/infoTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_Bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
+            tools:src="moderate rain" />
+        <!--Temp-->
+        <TextView
+            android:id="@+id/tempTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_44font_mdp"
+            app:fontPath="fonts/Vazirmatn_Bold.ttf"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/infoTxt"
+            tools:text="298.48" />
+
+        <TextView
+            android:id="@+id/TempInfoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14mdp"
+            android:drawablePadding="@dimen/_5mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_Bold"
+            android:textColor="@color/white"
+            app:drawableEndCompat="@drawable/arrow_up"
+            app:drawableStartCompat="@drawable/arrow_down"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/tempTxt" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/parent_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_14mdp"
+            android:layout_marginTop="@dimen/_16mdp"
+            android:layout_marginBottom="@dimen/_98mdp"
+            app:cardBackgroundColor="@color/colorOverLay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TempInfoTxt"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+            app:rippleColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/_16mdp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="false"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <!--Tab layout-->
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/detailTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:backgroundTint="@color/tab"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextAppearance="@style/TabLayoutFontBold"
+                    app:tabSelectedTextColor="@color/Blue_Magenta"
+                    app:tabIndicator="@color/Dark_Gunmetal"
+                    app:tabTextAppearance="@style/TabLayoutFontNormal"
+                    app:tabUnboundedRipple="false"
+                    app:tabRippleColor="@android:color/transparent"
+                    app:tabIndicatorAnimationDuration="200"
+                    app:tabIndicatorAnimationMode="linear"
+                    />
+                <!--View pager-->
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/detailViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180mdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/detailTabLayout" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Loading-->
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="@dimen/_25mdp"
+        android:layout_height="@dimen/_25mdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />    <!--WeatherView-->
+    <com.github.matteobattilana.weather.WeatherView
+        android:id="@+id/weatherView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

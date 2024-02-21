@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--constraintlayout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140mdp"
+        android:layout_marginHorizontal="@dimen/_6mdp"
+        android:layout_marginTop="@dimen/_6mdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bg_cities">
+        <!--guid-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_left"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2mdp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2mdp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guid_center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2mdp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+        <!--temp max-->
+        <TextView
+            android:id="@+id/txt_temp"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:textAppearance="@style/TextAppearance_Bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="19"
+            tools:textColor="@color/gray_900"
+            tools:textSize="@dimen/_22font_mdp" />
+        <!--temp info-->
+        <TextView
+            android:id="@+id/TempInfoTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14mdp"
+            android:drawablePadding="@dimen/_5mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_medium"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/txt_temp" />
+        <!--city name-->
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_Bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guid_left"
+            app:layout_constraintTop_toBottomOf="@id/TempInfoTxt"
+            tools:text="Shiraz"
+            tools:textColor="@color/gray_900"
+            tools:textSize="@dimen/_22font_mdp" />
+        <!--weather imageview-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="@dimen/_120mdp"
+            android:layout_height="@dimen/_120mdp"
+            android:elevation="0dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/mines30mdp"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"
+            app:layout_constraintStart_toStartOf="@id/guid_center"
+            app:layout_constraintTop_toTopOf="@id/txt_temp"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+            tools:src="@drawable/cloudy" />
+        <!--weather -->
+        <TextView
+            android:id="@+id/txt_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14mdp"
+            android:drawablePadding="@dimen/_5mdp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance_medium"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guid_center"
+            app:layout_constraintTop_toBottomOf="@id/weather_icon"
+            app:layout_constraintEnd_toEndOf="@id/guid_right"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10mdp">
+    <!--Icon-->
+    <ImageView
+        android:id="@+id/pollutionIconImg"
+        android:layout_width="@dimen/_45mdp"
+        android:layout_height="@dimen/_45mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Info-->
+    <TextView
+        android:id="@+id/pollutionInfoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_10font_mdp"
+        app:layout_constraintTop_toBottomOf="@id/pollutionIconImg" />
+    <!--List-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pollutionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        app:layout_constraintTop_toBottomOf="@+id/pollutionInfoTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

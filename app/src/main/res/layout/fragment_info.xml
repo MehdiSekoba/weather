@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top_rounded_white"
+    tools:context=".ui.info.InfoFragment">
+    <!--Scroll-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!--Container-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--city name-->
+            <TextView
+                android:id="@+id/cityTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textColor="@color/gray_900"
+                android:textSize="@dimen/_25font_mdp"
+                android:layout_marginTop="@dimen/_16mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Temp-->
+            <TextView
+                android:id="@+id/tempTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textColor="@color/gray_900"
+                android:textSize="@dimen/_25font_mdp"
+                app:layout_constraintBottom_toBottomOf="@id/iconImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityTxt" />
+            <!--Icon-->
+            <ImageView
+                android:id="@+id/iconImg"
+                android:layout_width="@dimen/_60mdp"
+                android:layout_height="@dimen/_60mdp"
+                android:layout_marginEnd="@dimen/_5mdp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toStartOf="@id/tempTxt"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--Info-->
+            <TextView
+                android:id="@+id/infoTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/gray_900"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tempTxt" />
+            <!--Temp info-->
+            <TextView
+                android:id="@+id/TempInfoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10mdp"
+                android:drawablePadding="@dimen/_5mdp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/gray_900"
+                android:textSize="@dimen/_12font_mdp"
+                app:drawableEndCompat="@drawable/arrow_up"
+                app:drawableStartCompat="@drawable/arrow_down"
+                app:drawableTint="@color/gray_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/infoTxt" />
+            <!--Weather-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/weatherCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15mdp"
+                android:theme="@style/ColoredShadowLight"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_10mdp"
+                app:cardElevation="@dimen/_15mdp"
+                app:layout_constraintTop_toBottomOf="@id/TempInfoTxt"
+                app:strokeColor="@color/white">
+                <!--Container-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--Include-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <include
+                            android:id="@+id/weatherLay"
+                            layout="@layout/info_weather" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!--Loading-->
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="@dimen/_20mdp"
+                android:layout_height="@dimen/_20mdp"
+                android:layout_marginTop="@dimen/_35mdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherCard" />
+            <!--Pollution-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pollutionCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15mdp"
+                android:layout_marginTop="@dimen/_25mdp"
+                android:layout_marginBottom="@dimen/_15mdp"
+                android:theme="@style/ColoredShadowLight"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_10mdp"
+                app:cardElevation="@dimen/_10mdp"
+                app:layout_constraintTop_toBottomOf="@id/weatherCard"
+                app:strokeColor="@color/white">
+                <!--Container-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--Include-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <include
+                            android:id="@+id/pollutionLay"
+                            layout="@layout/info_pollution" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!--Space-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50mdp"
+                app:layout_constraintTop_toBottomOf="@id/pollutionCard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

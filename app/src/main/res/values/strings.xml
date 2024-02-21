@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="checkYourNetwork">Check your internet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchYourCity">Search your desired city</string>
+    <string name="search">Search for…</string>
+    <string name="select">Select</string>
+    <string name="searchCanNotBeEmpty">City search cannot be empty</string>
+    <string name="selectOneCity">Select your desired city</string>
+    <string name="selectYourCity">Select your desired city</string>
+    <string name="notFoundAnyCity">No city has been added to the app</string>
+    <string name="degreeCelsius">&#xb0;C</string>
+    <string name="degree">&#xb0;</string>
+    <string name="showAllData">Show all data</string>
+    <string name="feelingTemp">The most comfortable temperature</string>
+    <string name="pressure">air humidity</string>
+    <string name="windSpeed">Wind speed</string>
+    <string name="messageAQI1">Going out is not dangerous, you can enjoy it</string>
+    <string name="messageAQI2">Children and working adults and people with respiratory diseases, such as asthma, should limit prolonged outdoor activity</string>
+    <string name="messageAQI3_4">Working children and adults and people with respiratory diseases such as asthma should avoid long-term outdoor work; Everyone else, especially children, should limit prolonged outdoor activity</string>
+    <string name="messageAQI5">Everyone should refrain from any outdoor activities</string>
+    <string name="co">carbon monoxide</string>
+    <string name="pm2_5">Particulate matter PM2.5</string>
+    <string name="pm10">Particulate matter PM10</string>
+    <string name="o3">Ozone</string>
+    <string name="no2">nitrogen dioxide</string>
+    <string name="so2">sulphur dioxide</string>
+    <string name="km_s">km/s</string>
+    <string name="txt_continue">Continue</string>
+    <string name="title_privacy">Privacy</string>
+    <string name="txt_accept">ok</string>
+    <string name="txt_Rules">Allow Weather to provide you with the most accurate forecast by allowing us to use your use of our app requires that you review our Terms of use and review our Privacy Policy.</string>
+    <string name="version">Version</string>
+    <string name="no_internet">NO INTERNET</string>
+    <string name="no_internet_desc">You are not connection to the internet </string>
+    <string name="retry">Retry</string>
+    <string name="title_hours">Hourly Forecast</string>
+    <string name="title_week">Weekly Forecast</string>
+    <string name="txt_Privacy">
+ Privacy Policy
+
+Overview
+Your privacy and data security are important to us. This Privacy Policy explains the types of personal information and data we may collect and store, and how personal data is used.
+In some cases, we need information to provide the services you have requested, and this Privacy Statement applies Live Weather Forecast &amp; Weather Widget.
+This Privacy Policy describes the information we may collect and use when you download our apps from the Google Play Store.
+By using our applications and services, you agree to the privacy terms described in this policy.
+*Non- Personal Information
+We may collect and use non-personal information in the followings .
+To have a better understanding in user\'s behavior, solve problems in products and services,
+ improve our products, services and advertising, we may collect non-personal information such as installed application name and package name, the data of install, frequency of use, country, equipment and channel.
+If non-personal information is combined with personal information,
+we treat the combined information as personal information for the purposes of this Privacy Policy.
+*Information we get from your use of our services
+We may collect information about the services that you use and how you use them, such as when you view and interact with our content.
+We may collect device-specific information (such as your hardware model, operating system version, unique device identifiers, and mobile network information).
+ We will not share that information with third parties.
+*Location information
+When you use a location-enabled Weather app service, we may collect and process information about your actual location, like GPS signals sent by a mobile device.
+We may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.
+</string>
+
+    <string name="please_turn">PLEASE TURN ON</string>
+    <string name="wifi">Wifi</string>
+    <string name="mobile_data">Mobile data</string>
+    <string name="accepting_rules">Accepting the rules</string>
+    <string name="reception">Please enable the check box to accept</string>
+    <string name="error_404">Double-check your input: Ensure that you\'ve entered the correct city name, ZIP code, or city ID</string>
+    <string name="error_429">The request was unacceptable</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="notFound">City not found</string>
+    <string name="language">Language</string>
+    <string name="about">About Us</string>
+    <string name="settings">settings</string>
+    <string name="language_selection">Language Selection</string>
+    <string name="unit_preferences">Unit Preferences</string>
+    <string name="rating">Rating App</string>
+    <string name="title_rate">Rate out app</string>
+    <string name="des_rate">If You are enjoy using our app.would you mind rating us one the App Store.</string>
+    <string name="may_be_later">May Be, later</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="name_developer">Mehdi Sekoba</string>
+    <string name="title_about_p">About Project</string>
+    <string name="description_about_p">It is an open source project taken from the openweathermap site.</string>
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Persian</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>Celsius</item>
+        <item>kilometers</item>
+        <item>e.g</item>
+        <item>per hour</item>
+
+    </string-array>
+
+</resources>

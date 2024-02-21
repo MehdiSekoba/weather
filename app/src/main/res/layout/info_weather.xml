@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10mdp"
+    android:orientation="vertical">
+    <!--Feel-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Image-->
+        <ImageView
+            android:id="@+id/feelImg"
+            android:layout_width="@dimen/_17mdp"
+            android:layout_height="@dimen/_17mdp"
+            android:alpha="0.9"
+            android:src="@drawable/face_smile_beam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/cornflowerBlue"
+            android:contentDescription="@string/app_name"/>
+        <!--Info-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10mdp"
+            android:text="@string/feelingTemp"
+            android:textColor="@color/gray_500"
+            android:textSize="@dimen/_9font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/feelImg"
+            app:layout_constraintStart_toEndOf="@id/feelCountTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Count-->
+        <TextView
+            android:id="@+id/feelCountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/royalBlue" />
+    <!--Pressure-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Image-->
+        <ImageView
+            android:id="@+id/pressureImg"
+            android:layout_width="@dimen/_17mdp"
+            android:layout_height="@dimen/_17mdp"
+            android:alpha="0.9"
+            android:src="@drawable/droplet_percent_do"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/cornflowerBlue" />
+        <!--Info-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10mdp"
+            android:text="@string/pressure"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/_9font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/pressureImg"
+            app:layout_constraintStart_toEndOf="@id/pressureCountTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Count-->
+        <TextView
+            android:id="@+id/pressureCountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/royalBlue" />
+    <!--Wind-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Image-->
+        <ImageView
+            android:id="@+id/windImg"
+            android:layout_width="@dimen/_17mdp"
+            android:layout_height="@dimen/_17mdp"
+            android:alpha="0.9"
+            android:src="@drawable/windy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/cornflowerBlue" />
+        <!--Info-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10mdp"
+            android:text="@string/windSpeed"
+            android:textColor="@color/gray_900"
+            android:textSize="@dimen/_9font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/windImg"
+            app:layout_constraintStart_toEndOf="@id/windCountTxt"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--Count-->
+        <TextView
+            android:id="@+id/windCountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10font_mdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

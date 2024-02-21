@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.SettingFragment">
+    <!--back-->
+    <TextView
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/arrow_left"
+        app:drawableTint="@color/white"
+        android:drawablePadding="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_12mdp"
+        android:layout_marginTop="@dimen/_32mdp"
+        android:text="@string/settings"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"/>
+    <!--Unit  Preferences-->
+    <TextView
+        android:id="@+id/txt_Unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:text="@string/unit_preferences"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/arrow_back"
+        app:layout_constraintTop_toBottomOf="@id/arrow_back"
+        android:drawablePadding="@dimen/_8mdp"
+        app:drawableStartCompat="@drawable/unit_weather"
+        app:drawableTint="@color/white" />
+    <!--language-->
+    <TextView
+        android:id="@+id/txt_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:text="@string/language_selection"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/arrow_back"
+        app:layout_constraintTop_toBottomOf="@id/txt_Unit"
+        android:drawablePadding="@dimen/_8mdp"
+        app:drawableStartCompat="@drawable/language_circle"
+        app:drawableTint="@color/white" />
+    <!--rating-->
+    <TextView
+        android:id="@+id/txt_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:text="@string/rating"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/arrow_back"
+        app:layout_constraintTop_toBottomOf="@id/txt_language"
+        android:drawablePadding="@dimen/_8mdp"
+        app:drawableStartCompat="@drawable/star"
+        app:drawableTint="@color/white" />
+
+    <!--about-->
+    <TextView
+        android:id="@+id/txt_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:text="@string/about"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_rating"
+        app:drawableStartCompat="@drawable/about"
+        app:drawableTint="@color/white"
+        android:drawablePadding="@dimen/_6mdp"
+        app:layout_constraintStart_toStartOf="@id/arrow_back"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

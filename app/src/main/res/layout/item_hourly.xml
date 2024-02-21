@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_68mdp"
+    android:layout_height="@dimen/_136mdp"
+    android:layout_marginTop="@dimen/_6mdp">
+    <!--card-view-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_4mdp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="@dimen/_14mdp"
+        app:cardElevation="@dimen/_2mdp"
+        app:strokeColor="#C1FFFFFF"
+        app:strokeWidth="0.5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_4mdp">
+            <!--text day-->
+            <TextView
+                android:id="@+id/day_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_2mdp"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="دوشنبه" />
+            <!--hour day-->
+            <TextView
+                android:id="@+id/hour_day"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_2mdp"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/day_name"
+                tools:text="18:00" />
+            <!--weather icon-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icon_weather"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34mdp"
+                android:layout_marginHorizontal="@dimen/_4mdp"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:alpha="0.9"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@id/hour_day"
+                app:shapeAppearanceOverlay="@style/CircleImage"
+                tools:src="@drawable/sun" />
+            <!--text max-->
+            <TextView
+                android:id="@+id/txt_temp_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4mdp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance_medium"
+                android:textColor="@color/white"
+                app:drawableStartCompat="@drawable/up_arrow"
+                app:drawableTint="@color/yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/icon_weather"
+                tools:text="19 o"
+                android:layout_marginHorizontal="@dimen/_4mdp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

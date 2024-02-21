@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.splash.SplashFragment">
+    <!--lottie-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/weather"
+        app:lottie_repeatCount="22" />
+    <!--app-name-->
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20mdp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance_Bold"
+        android:textColor="@color/white"
+        android:letterSpacing="0.25"
+        app:layout_constraintBottom_toTopOf="@id/txt_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--version-->
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance_medium"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_6mdp"
+        app:layout_constraintBottom_toTopOf="@id/DotProgressBar"
+        app:layout_constraintEnd_toEndOf="@id/txt_app_name"
+        app:layout_constraintStart_toStartOf="@id/txt_app_name"
+        tools:text="version 1" />
+    <!--animation-->
+    <com.mehdisekoba.weather.utils.view.DotProgressBar
+        android:id="@+id/DotProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:color="@color/white"
+        app:count="4"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_60mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

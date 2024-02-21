@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchFragment">
+    <!--Toolbar and search-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLay"
+        style="@style/ColoredShadowDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/_8mdp"
+        android:paddingBottom="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_32mdp"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Search-->
+        <EditText
+            android:id="@+id/searchEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38mdp"
+            android:layout_marginHorizontal="@dimen/_10mdp"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:background="@drawable/bg_circle_cultured"
+            android:drawableEnd="@drawable/search"
+            android:drawablePadding="@dimen/_10mdp"
+            android:gravity="center_vertical|start"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:paddingHorizontal="@dimen/_10mdp"
+            android:textColor="@color/gray_900"
+            android:textColorHint="@color/gray_500"
+            android:textSize="@dimen/_10font_mdp"
+            app:drawableTint="@color/gray_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--List-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_5mdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLay"
+        />
+    <!--Empty-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emptyLay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/searchList"
+        app:layout_constraintTop_toBottomOf="@+id/headerLay">
+
+        <include layout="@layout/empty" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
