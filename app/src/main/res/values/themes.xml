@@ -60,13 +60,11 @@
     <!--Tab layout-->
     <style name="TabLayoutFontNormal" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="fontFamily">@font/vazirmatn_regular</item>
-        <item name="android:fontFamily">@font/vazirmatn_regular</item>
         <item name="android:textSize">@dimen/_10font_mdp</item>
     </style>
 
     <style name="TabLayoutFontBold" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="fontFamily">@font/vazirmatn_bold</item>
-        <item name="android:fontFamily">@font/vazirmatn_bold</item>
         <item name="android:textSize">@dimen/_12font_mdp</item>
         <item name="android:textStyle">bold</item>
     </style>
