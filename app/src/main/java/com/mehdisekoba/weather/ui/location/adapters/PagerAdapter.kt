@@ -8,12 +8,11 @@ import com.mehdisekoba.weather.ui.location.hourly.HourlyFragment
 import com.mehdisekoba.weather.ui.location.weekly.WeeklyFragment
 
 class PagerAdapter(manager: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(manager, lifecycle) {
-    override fun getItemCount() = 3
+    override fun getItemCount() = 2
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> HourlyFragment()
-            1 -> WeeklyFragment()
             else -> HourlyFragment()
         }
     }
